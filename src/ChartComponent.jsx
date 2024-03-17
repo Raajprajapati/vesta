@@ -58,16 +58,16 @@ const ChartComponent = () => {
                 objData[item.hotel.id] = [item.hotel.name, 1];
             }
         })
-        const dataa = Object.values(objData);
+        const chartData = Object.values(objData);
 
         setyaxisData(() => {
-            return dataa.map((val) => {
+            return chartData.map((val) => {
                 return val[0]
             })
         });
 
         setSeriesData(() => {
-            return dataa.map((val) => {
+            return chartData.map((val) => {
                 return val[1]
             })
         })
