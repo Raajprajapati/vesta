@@ -1,13 +1,10 @@
-import { useState } from 'react'
-
+import ChartComponent from './ChartComponent'
 
 function App() {
 
   return (
     <>
-      <div>
-        hello
-      </div>
+      <ChartComponent/>
     </>
   )
 }
